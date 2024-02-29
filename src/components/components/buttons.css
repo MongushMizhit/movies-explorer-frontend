@@ -1,0 +1,71 @@
+.button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button_type_to-main {
+    color: rgb(66, 133, 244);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 184px 0 0;
+    background: inherit;
+}
+
+.button__authorization {
+    border-radius: 3px;
+    background: rgb(66, 133, 244);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 13px 0 15px;
+    margin-top: 91px;
+    width: 100%;
+}
+
+.button__login {
+    border-radius: 3px;
+    background: rgb(66, 133, 244);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 13px 0 15px;
+    margin-top: 179px;
+    width: 100%;
+}
+
+.button:hover {
+    opacity: 0.8;
+    transition: opacity .2s linear;
+}
+
+@media screen and (max-width: 490px) {
+    .button__authorization {
+        margin-top: 179px;
+    }
+
+    .button__login {
+        margin-top: 267px;
+    }
+
+    .button__authorization {
+        padding: 15px 0;
+    }
+
+    .button_type_to-main {
+        font-size: 12px;
+        line-height: 15px;
+        margin: 284px 0 0;
+    }
+}
