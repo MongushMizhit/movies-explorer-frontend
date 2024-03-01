@@ -3,14 +3,14 @@ import React from 'react'
 const Techs = () => {
     return (
         <section className='techs' id="technologies">
-        <h2 className='techs__title'>Технологии</h2>
         <div className='techs__seven'>
-            <h3 className='techs__seven-title'>
-                7 технологий
-            </h3>
-            <p className='techs__description'>
-                На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.
-            </p>
+            <h2 className='techs__title'>Технологии</h2>
+            <div className='techs__about'>
+                <h3 className='techs__seven-title'> 7 технологий</h3>
+                <p className='techs__description'>
+                    На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.
+                </p>
+            </div>
         </div>
         <div className='techs__names'>
             <p className='techs__name'>HTML</p>

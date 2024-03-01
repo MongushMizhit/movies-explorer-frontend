@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import logo from '../../images/logo.png'
+import logo from '../../images/logo-header.svg'
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -36,6 +36,7 @@ function Register() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Имя"
+            required
           />
           <h2 className="authorization__input_title">E-mail</h2>
           <input className='authorization__input'
@@ -44,6 +45,7 @@ function Register() {
             value={formData.email}
             onChange={handleChange}
             placeholder="E-mail"
+            required
           />
           <h2 className="authorization__input_title">Пароль</h2>
           <input className='authorization__input'
@@ -52,6 +54,7 @@ function Register() {
             value={formData.password}
             onChange={handleChange}
             placeholder="Пароль"
+            required
           />
         </label>
         <button type="submit" className="button button__authorization">

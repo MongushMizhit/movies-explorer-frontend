@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo-header.svg';
 import accountIcon from '../../images/account-icon.svg';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -13,9 +13,9 @@ function Header({ color }) {
   };
 
   return (
-    <section className={headerClass}>
+    <header className={headerClass}>
       <div className="header__tabs">
-        <img className="logo logo__header" src={logo} alt="Лого"/>
+        <Link to="/" className='header__link'><img className="logo logo__header" src={logo} alt="Лого"/></Link>
         {!isMenuOpen && (
           <div className='header__tabs-links'>
             <Link
@@ -40,7 +40,7 @@ function Header({ color }) {
       <button className="header__menu-toggle" onClick={handleMenuToggle}></button>
         <div className={`header__menu ${isMenuOpen ? 'show' : ''}`}>
         <button className="header__menu-close-btn" onClick={handleMenuToggle}></button>
-          <div className='haeder__menu-links'>
+          <div className='header__menu-links'>
             <Link to="/" className={`header__tabs-link ${location.pathname === '/' ? 'header__tabs-link-active' : ''}`}>Главная</Link>
             <Link to="/movies" className={`header__tabs-link ${location.pathname === '/movies' ? 'header__tabs-link-active' : ''}`}>Фильмы</Link>
             <Link to="/saved-movies" className={`header__tabs-link ${location.pathname === '/saved-movies' ? 'header__tabs-link-active' : ''}`}>Сохранённые фильмы</Link>
@@ -62,7 +62,7 @@ function Header({ color }) {
           </>
         )}
       </div>
-    </section>
+    </header>
   );
 }
 

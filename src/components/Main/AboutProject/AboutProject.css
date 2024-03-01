@@ -125,7 +125,6 @@
     .about__diploma {
         margin: 0;
         padding: 94px 0 0;
-        border-top: none;
     }
 
     .about__steps {
@@ -149,7 +148,7 @@
 
 @media screen and (max-width: 740px) {
     .about__project {
-        max-width: 490px;
+        max-width: 460px;
     }
 }
 

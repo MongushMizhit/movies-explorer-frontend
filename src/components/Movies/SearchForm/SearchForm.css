@@ -16,7 +16,7 @@
 .search-form__input {
     border-radius: 40px;
     background: rgb(47, 47, 47);
-    width: 90%;
+    width: 80%;
     background-color: transparent;
     border: none;
     outline: none;
@@ -28,6 +28,7 @@
     letter-spacing: 0px;
     text-align: left;
     padding: 14px 0 14px 22px;
+    cursor: pointer;
 }
 
 .search-form__submit-button {

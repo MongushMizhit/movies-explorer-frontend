@@ -37,14 +37,15 @@
     width: 100%;
     margin: 20px 0 0;
     padding-bottom: 20px;
+    border-bottom: rgb(66, 66, 66) solid 1px;
 }
 
 .portfolio__link:last-of-type {
+    border-bottom: none;
     padding-bottom: 0;
 }
 
 .portfolio__link:first-of-type {
-    border-bottom: rgb(66, 66, 66) solid 1px;
     margin: 0;
 }
 
@@ -72,19 +73,11 @@
         margin: 20px 0 0;
         padding-bottom: 19px;
     }
-
-    .portfolio__link:first-of-type {
-        border-bottom: none;
-    }
-
-    .portfolio__link:nth-of-type(2) {
-        border-bottom: rgb(66, 66, 66) solid 1px;
-    }
 }
 
 @media screen and (max-width: 740px) {
     .portfolio {
-        max-width: 490px;
+        max-width: 460px;
     }
 }
 
@@ -111,9 +104,5 @@
         margin: 20px 0 0;
         padding-bottom: 19px;
         border-bottom: rgb(66, 66, 66) solid 1px;
-    }
-
-    .portfolio__link:last-of-type {
-        border-bottom: none;
     }
 }
