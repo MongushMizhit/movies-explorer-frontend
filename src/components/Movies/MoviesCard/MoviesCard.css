@@ -4,6 +4,7 @@
     background: rgb(34, 34, 34);
     position: relative;
     max-width: 364px;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -15,8 +16,14 @@
 .movie__image {
     border-radius: 6px 6px 0px 0px;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+    height: 203px;
     width: 100%;
+}
+
+.movie__trailer-link {
+    display: block;
+    cursor: pointer;
 }
 
 .movie__container {
@@ -81,6 +88,10 @@
         max-width: 339px;
     }
 
+    .movie__image {
+        height: 190px;
+    }
+
     .movie__container {
         margin: 14px 22px 14px 14px;
     }
@@ -89,6 +100,10 @@
 @media screen and (max-width: 420px) {
     .movie {
         max-width: 300px;
+    }
+
+    .movie__image {
+        height: 168px;
     }
 
     .movie__title {

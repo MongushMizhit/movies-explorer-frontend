@@ -1,11 +1,4 @@
-.button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-bottom: none;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 
 .button_type_to-main {
     color: rgb(66, 133, 244);
@@ -17,6 +10,10 @@
     text-align: center;
     margin: 184px 0 0;
     background: inherit;
+    border: none;
+    border-bottom: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .button__authorization {
@@ -30,6 +27,10 @@
     padding: 13px 0 15px;
     margin-top: 91px;
     width: 100%;
+    border: none;
+    border-bottom: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .button__login {

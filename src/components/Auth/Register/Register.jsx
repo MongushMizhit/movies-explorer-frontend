@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import logo from '../../images/logo-header.svg'
 
-function Register() {
+function Register({ onRegister }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,7 +17,7 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Здесь можно добавить логику отправки данных на сервер для регистрации
-    console.log('Form data:', formData);
+    onRegister('Form data:', formData);
   };
 
   return (
@@ -57,7 +57,7 @@ function Register() {
             required
           />
         </label>
-        <button type="submit" className="button button__authorization">
+        <button type="submit" className="button__authorization">
           Зарегистрироваться
         </button>
         <p className="authorization__login">
