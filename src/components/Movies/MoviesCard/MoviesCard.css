@@ -1,0 +1,116 @@
+.movie {
+    border-radius: 6px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    background: rgb(34, 34, 34);
+    position: relative;
+    max-width: 364px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.movie__saved:hover {
+    cursor: pointer;
+}
+
+.movie__image {
+    border-radius: 6px 6px 0px 0px;
+    display: block;
+    object-fit: cover;
+    height: 203px;
+    width: 100%;
+}
+
+.movie__trailer-link {
+    display: block;
+    cursor: pointer;
+}
+
+.movie__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 24px 16px 16px;
+}
+
+.movie__title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 290px;
+    width: 100%;
+    margin: 0 0 17px;
+}
+
+.movie__lengh {
+    color: rgb(139, 139, 139);
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
+}
+
+.movie__like-btn {
+    background: url(../../images/movie-like-btn.svg) no-repeat center;
+    box-sizing: border-box;
+    border: none;
+    width: 14px;
+    height: 12px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.movie__like-btn-active {
+    background: url(../../images/movie-like-btn-active.svg) no-repeat center;
+}
+
+.movie__delete-btn {
+    background: url(../../images/movie-delete-btn.svg) no-repeat center;
+    box-sizing: border-box;
+    border: none;
+    width: 6.84px;
+    height: 6.72px;
+    margin-top: 4.58px;
+}
+
+.movie__delete-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+    .movie {
+        max-width: 339px;
+    }
+
+    .movie__image {
+        height: 190px;
+    }
+
+    .movie__container {
+        margin: 14px 22px 14px 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .movie {
+        max-width: 300px;
+    }
+
+    .movie__image {
+        height: 168px;
+    }
+
+    .movie__title {
+        margin: 0 0 14px;
+    }
+
+    .movie__container {
+        margin: 14px 18px 14px 14px;
+    }
+}

@@ -1,0 +1,108 @@
+.portfolio {
+    padding: 0 0 125px;
+    max-width: 1280px;
+    margin: 0 auto 0;
+}
+
+.portfolio__title {
+    color: rgb(139, 139, 139);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0 70px 30px;
+}
+
+.portfolio__links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px 0;
+}
+
+.portfolio__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -4%;
+    text-align: left;
+    text-decoration: none;
+    max-width: 1140px;
+    width: 100%;
+    margin: 20px 0 0;
+    padding-bottom: 20px;
+    border-bottom: rgb(66, 66, 66) solid 1px;
+}
+
+.portfolio__link:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.portfolio__link:first-of-type {
+    margin: 0;
+}
+
+.portfolio__link-arrow {
+    margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+    .portfolio {
+        padding: 0 0 90px;
+        max-width: 668px;
+        margin: 0 auto 0;
+    }
+
+    .portfolio__title {
+        margin: 0 0 50px;
+    }
+
+    .portfolio__links {
+        margin: 0;
+    }
+
+    .portfolio__link {
+        font-size: 28px;
+        margin: 20px 0 0;
+        padding-bottom: 19px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .portfolio {
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .portfolio {
+        padding: 0 0 70px;
+        max-width: 292px;
+    }
+
+    .portfolio__title {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 40px;
+    }
+
+    .portfolio__links {
+        margin: 0 auto 0;
+    }
+
+    .portfolio__link {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 292px;
+        margin: 20px 0 0;
+        padding-bottom: 19px;
+        border-bottom: rgb(66, 66, 66) solid 1px;
+    }
+}

@@ -1,0 +1,124 @@
+.authorization {
+    padding: 70px 0 70px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.authorization__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.authorization__title {
+    max-width: 396px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+    margin: 40px 0 0px;
+}
+
+.authorization__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 396px;
+    width: 100%;
+    padding: 0;
+}
+
+.authorization__input_title {
+    color: rgb(139, 139, 139);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 20px 0 10px;
+}
+
+.authorization__input_title:first-of-type {
+    margin: 40px 0 10px;
+}
+
+.authorization__label {
+    max-width: 396px;
+    display: grid;
+}
+
+.authorization__input {
+    border-radius: 8px;
+    border: none;
+    background: rgb(47, 47, 47);
+    max-width: 396px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.authorization__input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none;
+  }
+
+.authorization__login {
+    color: rgb(139, 139, 139);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    margin: 16px 0 0;
+}
+
+.authorization__login-link {
+    color: rgb(66, 133, 244);
+    text-decoration: none;
+}
+
+.authorization__login-link:hover {
+    opacity: 0.7;
+    transition: opacity .2s linear;
+}
+
+@media screen and (max-width: 920px) {
+    .authorization {
+        padding: 232px 0;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .authorization {
+        padding: 56px 0 30px;
+    }
+
+    .authorization__form {
+        max-width: 260px;
+        width: 100%;
+    }
+
+    .authorization__header {
+        align-items: center;
+    }
+
+    .authorization__title {
+        margin: 50px 0 0;
+    }
+
+    .authorization__input_title:first-of-type {
+        margin: 80px 0 10px;
+    }
+
+    .authorization__login {
+        margin: 14px 0 0;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
